@@ -29,11 +29,11 @@ This project is available as a live demo at [demo-link.com](https://demo-link.co
 
 ##  Screenshots
 
-### Main Dashboard
+### User Acitivity Dashboard
 ![image](https://github.com/user-attachments/assets/ff318566-7a13-4aca-9d96-d6d7b3f9295f)
 
 
-### Anomaly Detection
+### Action distribution Dashboard
 ![image](https://github.com/user-attachments/assets/e14f4d19-5298-40ec-b067-c38d7980708c)
 ![image](https://github.com/user-attachments/assets/099b00d1-86e1-4a3c-b268-1b3e224a1a19)
 
