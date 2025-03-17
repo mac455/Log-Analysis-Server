@@ -1,4 +1,4 @@
-# Log Analysis Dashboard
+# Security Log Analysis Dashboard
 
 A Flask-based web application for analyzing and visualizing log data patterns, designed to help identify anomalies and security incidents in system logs.
 
