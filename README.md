@@ -2,9 +2,10 @@
 
 A Flask-based web application for analyzing and visualizing log data patterns, designed to help identify anomalies and security incidents in system logs.
 
-![Dashboard Preview](screenshots/dashboard_preview.png)
+<img width="857" alt="image" src="https://github.com/user-attachments/assets/0178f256-6397-4718-ab90-19ac3b57d714" />
 
-## 🌟 Features
+
+##  Features
 
 - **Interactive Dashboard**: View key metrics and trends at a glance
 - **Anomaly Detection**: Identify unusual patterns in log data
@@ -12,13 +13,13 @@ A Flask-based web application for analyzing and visualizing log data patterns, d
 - **Data Visualization**: Charts and graphs to represent log activity patterns
 - **Responsive Design**: Works on desktop and mobile devices
 
-## 🚀 Demo
+##  Demo
 
 This project is available as a live demo at [demo-link.com](https://demo-link.com) where you can interact with the dashboard using simulated log data.
 
 > **Note**: The live demo uses simulated data and is intended for demonstration purposes only.
 
-## 📋 Technologies Used
+## Technologies Used
 
 - **Backend**: Python, Flask
 - **Database**: SQLite
@@ -26,53 +27,23 @@ This project is available as a live demo at [demo-link.com](https://demo-link.co
 - **Data Processing**: Pandas, NumPy
 - **Visualization**: Matplotlib
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Main Dashboard
-![Main Dashboard](screenshots/main_dashboard.png)
+![image](https://github.com/user-attachments/assets/ff318566-7a13-4aca-9d96-d6d7b3f9295f)
+
 
 ### Anomaly Detection
-![Anomaly Detection](screenshots/anomaly_detection.png)
+![image](https://github.com/user-attachments/assets/e14f4d19-5298-40ec-b067-c38d7980708c)
+![image](https://github.com/user-attachments/assets/099b00d1-86e1-4a3c-b268-1b3e224a1a19)
 
-### Search Functionality
-![Search Functionality](screenshots/search_functionality.png)
 
-## 🛠️ Installation and Setup
+### Security dashboard
+![image](https://github.com/user-attachments/assets/ed997bba-b65b-47e9-be8d-b138dce45b72)
+![image](https://github.com/user-attachments/assets/356d6575-3dae-4904-8794-31013d81c5ee)
 
-### Prerequisites
-- Python 3.7+
-- pip
 
-### Installation Steps
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/log-analysis-dashboard.git
-   cd log-analysis-dashboard
-   ```
-
-2. Create and activate a virtual environment (optional but recommended)
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Initialize the database with sample data
-   ```bash
-   python init_db.py
-   ```
-
-5. Run the application
-   ```bash
-   python app.py
-   ```
-
-6. Open your browser and navigate to `http://127.0.0.1:5000`
 
 ## 📊 Data Simulation
 
@@ -89,7 +60,7 @@ The data is designed to showcase patterns that would be typical in a production 
 - Weekend vs. weekday differences
 - Occasional anomalies that might indicate security concerns
 
-## 🔍 Usage Guide
+## Usage Guide
 
 ### Dashboard Navigation
 - The main dashboard displays an overview of log activity
@@ -107,26 +78,3 @@ The data is designed to showcase patterns that would be typical in a production 
 2. View highlighted unusual patterns
 3. Click on specific anomalies to see detailed information
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📞 Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/log-analysis-dashboard](https://github.com/yourusername/log-analysis-dashboard)
-
----
-
-⭐️ If you found this project helpful, please give it a star on GitHub! ⭐️ 
