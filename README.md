@@ -45,7 +45,8 @@ This project is available as a live demo at [demo-link.com](https://demo-link.co
 ### Anomaly Detectiom
 ![image](https://github.com/user-attachments/assets/d42d2a6f-9679-463a-9c56-f82e495f9a35)
 ![image](https://github.com/user-attachments/assets/39a1e534-1a0e-4da2-9c7d-908d55a85171)
-![image](https://github.com/user-attachments/assets/76293308-b4d8-48d0-bde2-31afe3f2c6ac)
+![image](https://github.com/user-attachments/assets/05d98cea-1efc-4299-91a5-c647a371957f)
+
 
 
 
