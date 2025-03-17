@@ -1,0 +1,236 @@
+2025-01-31 09:33:04,719 - 127.0.0.1 - - [31/Jan/2025 09:33:04] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-01-31 09:33:04,918 - 127.0.0.1 - - [31/Jan/2025 09:33:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-31 09:33:04,918 - 127.0.0.1 - - [31/Jan/2025 09:33:04] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-31 09:33:05,042 - 127.0.0.1 - - [31/Jan/2025 09:33:05] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=uQLF3RDJaeaVWN4Hv65M HTTP/1.1" 200 -
+2025-01-31 09:33:05,247 - 127.0.0.1 - - [31/Jan/2025 09:33:05] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-01-31 09:33:33,101 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:33:33,184 -  * Restarting with stat
+2025-01-31 09:33:34,481 -  * Debugger is active!
+2025-01-31 09:33:34,481 -  * Debugger PIN: 545-613-911
+2025-01-31 09:33:44,761 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:33:44,851 -  * Restarting with stat
+2025-01-31 09:33:46,116 -  * Debugger is active!
+2025-01-31 09:33:46,122 -  * Debugger PIN: 545-613-911
+2025-01-31 09:34:07,639 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:34:07,721 -  * Restarting with stat
+2025-01-31 09:34:08,956 -  * Debugger is active!
+2025-01-31 09:34:08,962 -  * Debugger PIN: 545-613-911
+2025-01-31 09:34:14,122 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:34:14,168 -  * Restarting with stat
+2025-01-31 09:37:42,151 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-31 09:37:42,151 - [33mPress CTRL+C to quit[0m
+2025-01-31 09:37:42,155 -  * Restarting with stat
+2025-01-31 09:37:43,450 -  * Debugger is active!
+2025-01-31 09:37:43,467 -  * Debugger PIN: 545-613-911
+2025-01-31 09:37:50,138 - 127.0.0.1 - - [31/Jan/2025 09:37:50] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-01-31 09:37:50,280 - 127.0.0.1 - - [31/Jan/2025 09:37:50] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-31 09:37:50,286 - 127.0.0.1 - - [31/Jan/2025 09:37:50] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-31 09:37:50,343 - 127.0.0.1 - - [31/Jan/2025 09:37:50] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=K2bLbtnDBiym5uriJ7KH HTTP/1.1" 200 -
+2025-01-31 09:37:50,422 - 127.0.0.1 - - [31/Jan/2025 09:37:50] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-01-31 09:38:26,508 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:38:26,593 -  * Restarting with stat
+2025-01-31 09:38:28,127 -  * Debugger is active!
+2025-01-31 09:38:28,135 -  * Debugger PIN: 545-613-911
+2025-01-31 09:38:31,302 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:38:31,376 -  * Restarting with stat
+2025-01-31 09:38:32,722 -  * Debugger is active!
+2025-01-31 09:38:32,730 -  * Debugger PIN: 545-613-911
+2025-01-31 09:39:20,419 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-31 09:39:20,419 - [33mPress CTRL+C to quit[0m
+2025-01-31 09:39:20,419 -  * Restarting with stat
+2025-01-31 09:39:21,680 -  * Debugger is active!
+2025-01-31 09:39:21,689 -  * Debugger PIN: 545-613-911
+2025-01-31 09:39:24,063 - User newuser logged in successfully from IP: 127.0.0.1 at 2025-01-31 09:39:23
+2025-01-31 09:39:24,063 - 127.0.0.1 - - [31/Jan/2025 09:39:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-31 09:39:24,078 - User newuser accessed the dashboard
+2025-01-31 09:39:24,094 - 127.0.0.1 - - [31/Jan/2025 09:39:24] "GET /dashboard HTTP/1.1" 200 -
+2025-01-31 09:40:48,038 - User newuser accessed the dashboard
+2025-01-31 09:40:48,043 - 127.0.0.1 - - [31/Jan/2025 09:40:48] "GET /dashboard HTTP/1.1" 200 -
+2025-01-31 09:40:50,787 - User newuser accessed the dashboard
+2025-01-31 09:40:50,788 - 127.0.0.1 - - [31/Jan/2025 09:40:50] "GET /dashboard HTTP/1.1" 200 -
+2025-01-31 09:40:56,840 - User newuser accessed the dashboard
+2025-01-31 09:40:56,841 - 127.0.0.1 - - [31/Jan/2025 09:40:56] "GET /dashboard HTTP/1.1" 200 -
+2025-01-31 09:41:00,889 - User newuser logged in successfully from IP: 127.0.0.1 at 2025-01-31 09:41:00
+2025-01-31 09:41:00,889 - 127.0.0.1 - - [31/Jan/2025 09:41:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-01-31 09:41:00,910 - User newuser accessed the dashboard
+2025-01-31 09:41:00,911 - 127.0.0.1 - - [31/Jan/2025 09:41:00] "GET /dashboard HTTP/1.1" 200 -
+2025-01-31 09:41:12,472 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:41:12,552 -  * Restarting with stat
+2025-01-31 09:41:14,110 -  * Debugger is active!
+2025-01-31 09:41:14,117 -  * Debugger PIN: 545-613-911
+2025-01-31 09:41:59,234 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:41:59,319 -  * Restarting with stat
+2025-01-31 09:42:01,047 -  * Debugger is active!
+2025-01-31 09:42:01,060 -  * Debugger PIN: 545-613-911
+2025-01-31 09:42:08,302 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:42:08,391 -  * Restarting with stat
+2025-01-31 09:42:09,912 -  * Debugger is active!
+2025-01-31 09:42:09,920 -  * Debugger PIN: 545-613-911
+2025-01-31 09:42:14,077 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-01-31 09:42:14,163 -  * Restarting with stat
+2025-01-31 09:42:15,605 -  * Debugger is active!
+2025-01-31 09:42:15,614 -  * Debugger PIN: 545-613-911
+2025-01-31 09:42:16,907 - User newuser accessed the dashboard
+2025-01-31 09:42:16,918 - 127.0.0.1 - - [31/Jan/2025 09:42:16] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 17:27:05,904 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 17:27:05,905 - [33mPress CTRL+C to quit[0m
+2025-02-09 17:27:05,907 -  * Restarting with stat
+2025-02-09 17:27:07,003 -  * Debugger is active!
+2025-02-09 17:27:07,008 -  * Debugger PIN: 545-613-911
+2025-02-09 17:28:18,979 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 17:28:18,980 - [33mPress CTRL+C to quit[0m
+2025-02-09 17:28:18,982 -  * Restarting with stat
+2025-02-09 17:28:20,057 -  * Debugger is active!
+2025-02-09 17:28:20,061 -  * Debugger PIN: 545-613-911
+2025-02-09 17:33:11,534 - 127.0.0.1 - - [09/Feb/2025 17:33:11] "GET / HTTP/1.1" 200 -
+2025-02-09 17:33:12,021 - 127.0.0.1 - - [09/Feb/2025 17:33:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-09 17:33:37,781 - User newuser logged in successfully from IP: 127.0.0.1 at 2025-02-09 17:33:37
+2025-02-09 17:33:37,783 - 127.0.0.1 - - [09/Feb/2025 17:33:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:33:37,794 - 127.0.0.1 - - [09/Feb/2025 17:33:37] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-02-09 17:33:37,804 - 127.0.0.1 - - [09/Feb/2025 17:33:37] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:34:01,072 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 17:34:00
+2025-02-09 17:34:01,073 - 127.0.0.1 - - [09/Feb/2025 17:34:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:34:01,083 - 127.0.0.1 - - [09/Feb/2025 17:34:01] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-02-09 17:34:01,094 - 127.0.0.1 - - [09/Feb/2025 17:34:01] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:34:08,719 - Login failed for user admin from IP: 127.0.0.1 at 2025-02-09 17:34:08
+2025-02-09 17:34:08,720 - 127.0.0.1 - - [09/Feb/2025 17:34:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:34:08,727 - 127.0.0.1 - - [09/Feb/2025 17:34:08] "GET /?error=Incorrect+details HTTP/1.1" 200 -
+2025-02-09 17:34:23,454 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 17:34:23
+2025-02-09 17:34:23,455 - 127.0.0.1 - - [09/Feb/2025 17:34:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:34:23,463 - 127.0.0.1 - - [09/Feb/2025 17:34:23] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-02-09 17:34:23,471 - 127.0.0.1 - - [09/Feb/2025 17:34:23] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:34:41,774 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 17:34:41
+2025-02-09 17:34:41,775 - 127.0.0.1 - - [09/Feb/2025 17:34:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:34:41,784 - 127.0.0.1 - - [09/Feb/2025 17:34:41] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-02-09 17:34:41,793 - 127.0.0.1 - - [09/Feb/2025 17:34:41] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:34:44,831 - 127.0.0.1 - - [09/Feb/2025 17:34:44] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:34:45,912 - 127.0.0.1 - - [09/Feb/2025 17:34:45] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:34:51,284 - 127.0.0.1 - - [09/Feb/2025 17:34:51] "GET / HTTP/1.1" 200 -
+2025-02-09 17:35:00,401 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 17:35:00
+2025-02-09 17:35:00,402 - 127.0.0.1 - - [09/Feb/2025 17:35:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:35:00,410 - 127.0.0.1 - - [09/Feb/2025 17:35:00] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-02-09 17:35:00,417 - 127.0.0.1 - - [09/Feb/2025 17:35:00] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 17:36:49,571 - 127.0.0.1 - - [09/Feb/2025 17:36:49] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-02-09 17:36:53,765 - 127.0.0.1 - - [09/Feb/2025 17:36:53] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-02-09 17:39:53,508 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 17:39:53,749 -  * Restarting with stat
+2025-02-09 17:39:55,908 -  * Debugger is active!
+2025-02-09 17:39:55,916 -  * Debugger PIN: 545-613-911
+2025-02-09 17:39:58,131 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 17:39:58,236 -  * Restarting with stat
+2025-02-09 17:40:00,990 -  * Debugger is active!
+2025-02-09 17:40:00,997 -  * Debugger PIN: 545-613-911
+2025-02-09 17:40:24,851 - User admin accessed the dashboard
+2025-02-09 17:40:24,868 - 127.0.0.1 - - [09/Feb/2025 17:40:24] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 17:40:43,740 - 127.0.0.1 - - [09/Feb/2025 17:40:43] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+2025-02-09 17:40:47,051 - 127.0.0.1 - - [09/Feb/2025 17:40:47] "GET / HTTP/1.1" 200 -
+2025-02-09 17:40:57,256 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 17:40:56
+2025-02-09 17:40:57,258 - 127.0.0.1 - - [09/Feb/2025 17:40:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 17:40:57,269 - User admin accessed the dashboard
+2025-02-09 17:40:57,270 - 127.0.0.1 - - [09/Feb/2025 17:40:57] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 17:41:17,193 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 17:41:17,272 -  * Restarting with stat
+2025-02-09 17:41:19,065 -  * Debugger is active!
+2025-02-09 17:41:19,074 -  * Debugger PIN: 545-613-911
+2025-02-09 17:41:20,187 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 17:41:20,271 -  * Restarting with stat
+2025-02-09 17:49:47,687 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 17:49:47,688 - [33mPress CTRL+C to quit[0m
+2025-02-09 17:49:47,693 -  * Restarting with stat
+2025-02-09 17:49:49,732 -  * Debugger is active!
+2025-02-09 17:49:49,750 -  * Debugger PIN: 545-613-911
+2025-02-09 17:49:49,831 - 127.0.0.1 - - [09/Feb/2025 17:49:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-02-09 17:49:49,871 - 127.0.0.1 - - [09/Feb/2025 17:49:49] "GET / HTTP/1.1" 200 -
+2025-02-09 20:52:39,209 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 20:52:41,904 -  * Restarting with stat
+2025-02-09 20:52:45,933 -  * Debugger is active!
+2025-02-09 20:52:45,958 -  * Debugger PIN: 545-613-911
+2025-02-09 20:53:13,868 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 20:53:14,137 -  * Restarting with stat
+2025-02-09 20:53:17,008 -  * Debugger is active!
+2025-02-09 20:53:17,021 -  * Debugger PIN: 545-613-911
+2025-02-09 20:53:17,194 - 127.0.0.1 - - [09/Feb/2025 20:53:17] "GET / HTTP/1.1" 200 -
+2025-02-09 20:54:33,138 - User newuser logged in successfully from IP: 127.0.0.1 at 2025-02-09 20:54:32
+2025-02-09 20:54:33,142 - 127.0.0.1 - - [09/Feb/2025 20:54:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 20:54:33,160 - 127.0.0.1 - - [09/Feb/2025 20:54:33] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-02-09 20:54:33,180 - 127.0.0.1 - - [09/Feb/2025 20:54:33] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 20:56:56,806 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 20:56:56
+2025-02-09 20:56:56,808 - 127.0.0.1 - - [09/Feb/2025 20:56:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 20:56:56,842 - User admin accessed the dashboard
+2025-02-09 20:56:56,853 - 127.0.0.1 - - [09/Feb/2025 20:56:56] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:00:30,138 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 21:00:30,390 -  * Restarting with stat
+2025-02-09 21:00:32,529 -  * Debugger is active!
+2025-02-09 21:00:32,538 -  * Debugger PIN: 545-613-911
+2025-02-09 21:01:14,302 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 21:01:14,444 -  * Restarting with stat
+2025-02-09 21:01:16,583 -  * Debugger is active!
+2025-02-09 21:01:16,593 -  * Debugger PIN: 545-613-911
+2025-02-09 21:01:21,896 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 21:01:22,071 -  * Restarting with stat
+2025-02-09 21:01:28,821 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 21:01:28,822 - [33mPress CTRL+C to quit[0m
+2025-02-09 21:01:28,828 -  * Restarting with stat
+2025-02-09 21:01:31,528 -  * Debugger is active!
+2025-02-09 21:01:31,544 -  * Debugger PIN: 545-613-911
+2025-02-09 21:01:36,978 - 127.0.0.1 - - [09/Feb/2025 21:01:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-02-09 21:01:37,030 - 127.0.0.1 - - [09/Feb/2025 21:01:37] "GET / HTTP/1.1" 200 -
+2025-02-09 21:01:54,818 - User newuser logged in successfully from IP: 127.0.0.1 at 2025-02-09 21:01:54
+2025-02-09 21:01:54,819 - 127.0.0.1 - - [09/Feb/2025 21:01:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 21:01:54,833 - User newuser accessed the dashboard
+2025-02-09 21:01:54,841 - 127.0.0.1 - - [09/Feb/2025 21:01:54] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:04:15,588 - User newuser accessed the dashboard
+2025-02-09 21:04:15,591 - 127.0.0.1 - - [09/Feb/2025 21:04:15] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:17:01,699 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 21:17:01,932 -  * Restarting with stat
+2025-02-09 21:17:03,645 -  * Debugger is active!
+2025-02-09 21:17:03,656 -  * Debugger PIN: 545-613-911
+2025-02-09 21:17:27,680 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 21:17:27,782 -  * Restarting with stat
+2025-02-09 21:17:29,412 -  * Debugger is active!
+2025-02-09 21:17:29,419 -  * Debugger PIN: 545-613-911
+2025-02-09 21:18:23,737 - User newuser accessed the dashboard
+2025-02-09 21:18:23,761 - 127.0.0.1 - - [09/Feb/2025 21:18:23] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:20:21,313 - 127.0.0.1 - - [09/Feb/2025 21:20:21] "[32mGET /logs HTTP/1.1[0m" 302 -
+2025-02-09 21:20:21,351 - 127.0.0.1 - - [09/Feb/2025 21:20:21] "GET /?error=You+do+not+have+permission+to+access+this+page. HTTP/1.1" 200 -
+2025-02-09 21:22:37,192 - User admin logged in successfully from IP: 127.0.0.1 at 2025-02-09 21:22:36
+2025-02-09 21:22:37,197 - 127.0.0.1 - - [09/Feb/2025 21:22:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 21:22:37,207 - User admin accessed the dashboard
+2025-02-09 21:22:37,209 - 127.0.0.1 - - [09/Feb/2025 21:22:37] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:22:38,710 - 127.0.0.1 - - [09/Feb/2025 21:22:38] "GET /logs HTTP/1.1" 200 -
+2025-02-09 21:23:45,939 - User admin accessed the dashboard
+2025-02-09 21:23:45,941 - 127.0.0.1 - - [09/Feb/2025 21:23:45] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:24:14,326 - User admin accessed the dashboard
+2025-02-09 21:24:14,329 - 127.0.0.1 - - [09/Feb/2025 21:24:14] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:24:16,791 - User admin accessed the dashboard
+2025-02-09 21:24:16,792 - 127.0.0.1 - - [09/Feb/2025 21:24:16] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:24:24,948 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 21:24:24,948 - [33mPress CTRL+C to quit[0m
+2025-02-09 21:24:24,951 -  * Restarting with stat
+2025-02-09 21:24:26,792 -  * Debugger is active!
+2025-02-09 21:24:26,799 -  * Debugger PIN: 545-613-911
+2025-02-09 21:24:27,211 - User admin accessed the dashboard
+2025-02-09 21:24:27,235 - 127.0.0.1 - - [09/Feb/2025 21:24:27] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:24:31,090 - 127.0.0.1 - - [09/Feb/2025 21:24:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-02-09 21:24:31,111 - 127.0.0.1 - - [09/Feb/2025 21:24:31] "GET / HTTP/1.1" 200 -
+2025-02-09 21:24:37,469 - User mac logged in successfully from IP: 127.0.0.1 at 2025-02-09 21:24:37
+2025-02-09 21:24:37,470 - 127.0.0.1 - - [09/Feb/2025 21:24:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-02-09 21:24:37,483 - User mac accessed the dashboard
+2025-02-09 21:24:37,485 - 127.0.0.1 - - [09/Feb/2025 21:24:37] "GET /dashboard HTTP/1.1" 200 -
+2025-02-09 21:25:49,088 -  * Detected change in 'C:\\Users\\mcant\\Security server\\src\\routes.py', reloading
+2025-02-09 21:25:49,182 -  * Restarting with stat
+2025-02-09 21:27:30,915 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 21:27:30,915 - [33mPress CTRL+C to quit[0m
+2025-02-09 21:27:30,918 -  * Restarting with stat
+2025-02-09 21:27:32,649 -  * Debugger is active!
+2025-02-09 21:27:32,658 -  * Debugger PIN: 545-613-911
+2025-02-09 21:27:32,782 - 127.0.0.1 - - [09/Feb/2025 21:27:32] "GET /logs HTTP/1.1" 200 -
+2025-02-09 21:27:34,015 - 127.0.0.1 - - [09/Feb/2025 21:27:34] "GET /logs HTTP/1.1" 200 -
