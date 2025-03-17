@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Activity Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #212529;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            font-weight: 700;
+            padding: 15px 0;
+            position: relative;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, #3a506b, #4361ee);
+            border-radius: 2px;
+        }
+        .header-container {
+            text-align: center;
+            width: 100%;
+        }
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        .nav-button {
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 180px;
+            max-width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3a506b;
+            color: white;
+        }
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+            background-color: #1c2541;
+        }
+        .nav-button.primary {
+            background-color: #3a506b;
+            border-bottom: 3px solid #4361ee;
+        }
+        .nav-button.success {
+            background-color: #3a506b;
+            border-bottom: 3px solid #38b000;
+        }
+        .nav-button.warning {
+            background-color: #3a506b;
+            border-bottom: 3px solid #ff9e00;
+        }
+        .nav-button.danger {
+            background-color: #3a506b;
+            border-bottom: 3px solid #ef476f;
+        }
+        .nav-button.info {
+            background-color: #3a506b;
+            border-bottom: 3px solid #4cc9f0;
+        }
+        .content-container {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .image-container {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+        }
+        .analysis-container {
+            margin-top: 20px;
+            text-align: left;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 16px;
+        }
+        .analysis-container h3 {
+            color: #3a506b;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+        .analysis-container p, .analysis-container li {
+            margin-top: 10px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        .analysis-container strong {
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .action-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3a506b;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <h1>User Activity Dashboard</h1>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="{{ url_for('logs.index') }}" class="nav-button primary">Home</a>
+            <a href="{{ url_for('logs.plot') }}" class="nav-button success">User Activity Plot</a>
+            <a href="{{ url_for('logs.dashboard') }}" class="nav-button info">Dashboard</a>
+            <a href="{{ url_for('logs.security_dashboard') }}" class="nav-button danger">Security Dashboard</a>
+            <a href="{{ url_for('logs.detect_anomalies') }}" class="nav-button warning">Anomaly Detection</a>
+        </div>
+        
+        <div class="content-container">
+            <div class="image-container">
+                <img src="data:image/png;base64,{{ img_b64 }}" alt="User Activity Plot" style="max-width:100%; height:auto;">
+            </div>
+            <div class="analysis-container">
+                <h3>Analysis</h3>
+                <p style="margin-top: 10px; line-height: 1.6;">
+                    This visualization shows the distribution of different actions performed by each user. 
+                    The stacked bars represent different action types, allowing you to compare user activity patterns.
+                </p>
+                <p style="margin-top: 10px; line-height: 1.6;">
+                    <strong>Key Observations:</strong>
+                </p>
+                <ul style="margin-top: 5px; line-height: 1.6;">
+                    <li>Compare the total activity levels between users</li>
+                    <li>Identify which actions are most common for each user</li>
+                    <li>Spot unusual patterns or outliers in user behavior</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

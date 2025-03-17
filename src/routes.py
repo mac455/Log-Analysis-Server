@@ -87,197 +87,7 @@ def plot():
         img_b64 = base64.b64encode(img.getvalue()).decode()
         plt.close()
 
-        # Return HTML with page header, navbar, centered image and evaluation section
-        return f'''
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>User Activity Dashboard</title>
-            <style>
-                * {{
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }}
-                body {{
-                    background-color: #f8f9fa;
-                    color: #343a40;
-                    line-height: 1.6;
-                }}
-                .container {{
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }}
-                h1 {{
-                    text-align: center;
-                    color: #212529;
-                    margin-bottom: 30px;
-                    font-size: 2.5em;
-                    font-weight: 700;
-                    padding: 15px 0;
-                    position: relative;
-                    letter-spacing: 1px;
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }}
-                h1::after {{
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 3px;
-                    background: linear-gradient(to right, #3a506b, #4361ee);
-                    border-radius: 2px;
-                }}
-                .header-container {{
-                    text-align: center;
-                    width: 100%;
-                }}
-                .nav-buttons {{
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 15px;
-                    margin-bottom: 30px;
-                    justify-content: center;
-                }}
-                .nav-button {{
-                    padding: 12px 24px;
-                    border-radius: 6px;
-                    font-weight: 600;
-                    text-decoration: none;
-                    text-align: center;
-                    transition: all 0.3s ease;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                    flex: 1;
-                    min-width: 180px;
-                    max-width: 250px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: #3a506b;
-                    color: white;
-                }}
-                .nav-button:hover {{
-                    transform: translateY(-3px);
-                    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
-                    background-color: #1c2541;
-                }}
-                .nav-button.primary {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #4361ee;
-                }}
-                .nav-button.success {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #38b000;
-                }}
-                .nav-button.warning {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #ff9e00;
-                }}
-                .nav-button.danger {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #ef476f;
-                }}
-                .nav-button.info {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #4cc9f0;
-                }}
-                .content-container {{
-                    text-align: center;
-                    max-width: 1000px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }}
-                .image-container {{
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                    padding: 10px;
-                    background: white;
-                    border-radius: 8px;
-                }}
-                .analysis-container {{
-                    margin-top: 20px;
-                    text-align: left;
-                    background: white;
-                    padding: 15px;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                    font-size: 16px;
-                }}
-                .analysis-container h3 {{
-                    color: #3a506b;
-                    border-bottom: 1px solid #e9ecef;
-                    padding-bottom: 10px;
-                    font-size: 20px;
-                }}
-                .analysis-container p, .analysis-container li {{
-                    margin-top: 10px;
-                    line-height: 1.7;
-                    font-size: 16px;
-                }}
-                .analysis-container strong {{
-                    font-size: 17px;
-                    font-weight: 600;
-                }}
-                .button-container {{
-                    margin-top: 20px;
-                    text-align: center;
-                }}
-                .action-button {{
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: #3a506b;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 4px;
-                    margin-right: 10px;
-                }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="header-container">
-                    <h1>User Activity Dashboard</h1>
-                </div>
-                
-                <!-- Navigation Buttons -->
-                <div class="nav-buttons">
-                    <a href="{url_for('logs.index')}" class="nav-button primary">Home</a>
-                    <a href="{url_for('logs.plot')}" class="nav-button success">User Activity Plot</a>
-                    <a href="{url_for('logs.dashboard')}" class="nav-button info">Dashboard</a>
-                    <a href="{url_for('logs.security_dashboard')}" class="nav-button danger">Security Dashboard</a>
-                    <a href="{url_for('logs.detect_anomalies')}" class="nav-button warning">Anomaly Detection</a>
-                </div>
-                
-                <div class="content-container">
-                    <div class="image-container">
-                        <img src="data:image/png;base64,{img_b64}" alt="User Activity Plot" style="max-width:100%; height:auto;">
-                    </div>
-                    <div class="analysis-container">
-                        <h3>Analysis</h3>
-                        <p style="margin-top: 10px; line-height: 1.6;">
-                            This visualization shows the distribution of different actions performed by each user. 
-                            The stacked bars represent different action types, allowing you to compare user activity patterns.
-                        </p>
-                        <p style="margin-top: 10px; line-height: 1.6;">
-                            <strong>Key Observations:</strong>
-                        </p>
-                        <ul style="margin-top: 5px; line-height: 1.6;">
-                            <li>Compare the total activity levels between users</li>
-                            <li>Identify which actions are most common for each user</li>
-                            <li>Spot unusual patterns or outliers in user behavior</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </body>
-        </html>
-        '''
+        return render_template('plot.html', img_b64=img_b64)
     return "Error loading logs"
 
 @logs.route("/filter")
@@ -399,12 +209,49 @@ def detect_anomalies():
     
     # 1. Failed logins over time
     if not recent_failed.empty:
-        time_series = recent_failed.set_index("timestamp").resample('D')["action"].count()
-        time_series.plot(kind="line", marker='o', color="#ff9e00", ax=ax1)
-        ax1.set_title("Failed Login Attempts Over Time", fontsize=14, fontweight='bold')
-        ax1.set_xlabel("Date", fontsize=12)
+        # Make sure timestamp is a datetime type
+        if not pd.api.types.is_datetime64_any_dtype(recent_failed["timestamp"]):
+            recent_failed["timestamp"] = pd.to_datetime(recent_failed["timestamp"])
+        
+        # Print the timestamp data for debugging
+        print("Timestamp data types:", recent_failed["timestamp"].dtype)
+        print("Sample timestamps:", recent_failed["timestamp"].head())
+        
+        # Extract hour from timestamp for hourly grouping - more explicit format
+        recent_failed['hour'] = recent_failed['timestamp'].dt.floor('H').dt.strftime('%Y-%m-%d %H:00')
+        
+        # Print the grouped data for debugging
+        print("Unique hours:", recent_failed['hour'].unique())
+        print("Hour counts:", recent_failed['hour'].value_counts().sort_index())
+        
+        # Group by hour and count
+        hourly_counts = recent_failed.groupby('hour').size().reset_index(name='count')
+        print("Hourly counts:", hourly_counts)
+        
+        # Plot the time series
+        ax1.plot(range(len(hourly_counts)), hourly_counts['count'], marker='o', color="#ff9e00", linestyle='-')
+        
+        # Add data labels to each point
+        for i, count in enumerate(hourly_counts['count']):
+            ax1.annotate(f'{count}', (i, count), textcoords="offset points", 
+                        xytext=(0,10), ha='center')
+        
+        ax1.set_title(f"Failed Login Attempts Over Time (Total: {total_failed_attempts})", 
+                     fontsize=14, fontweight='bold')
+        ax1.set_xlabel("Hour", fontsize=12)
         ax1.set_ylabel("Number of Failed Attempts", fontsize=12)
         ax1.grid(True, linestyle='--', alpha=0.7)
+        
+        # Format x-axis labels
+        ax1.set_xticks(range(len(hourly_counts)))
+        ax1.set_xticklabels(hourly_counts['hour'], rotation=45, ha='right', fontsize=8)
+        
+        # Ensure all data points are visible
+        ax1.set_xlim(-0.5, len(hourly_counts) - 0.5)
+        
+        # Add some padding to y-axis to make room for data labels
+        y_max = hourly_counts['count'].max() if not hourly_counts.empty else 1
+        ax1.set_ylim(0, y_max * 1.15)
     else:
         ax1.text(0.5, 0.5, "No failed login data available", 
                  horizontalalignment='center', verticalalignment='center',
@@ -493,193 +340,7 @@ def dashboard():
         img_b64 = base64.b64encode(img.getvalue()).decode()
         plt.close()
 
-        # Return HTML with page header, navbar, centered image and evaluation section
-        return f'''
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Activity Dashboard</title>
-            <style>
-                * {{
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }}
-                body {{
-                    background-color: #f8f9fa;
-                    color: #343a40;
-                    line-height: 1.6;
-                }}
-                .container {{
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }}
-                h1 {{
-                    text-align: center;
-                    color: #212529;
-                    margin-bottom: 30px;
-                    font-size: 2.5em;
-                    font-weight: 700;
-                    padding: 15px 0;
-                    position: relative;
-                    letter-spacing: 1px;
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }}
-                h1::after {{
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 3px;
-                    background: linear-gradient(to right, #3a506b, #4361ee);
-                    border-radius: 2px;
-                }}
-                .header-container {{
-                    text-align: center;
-                    width: 100%;
-                }}
-                .nav-buttons {{
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 15px;
-                    margin-bottom: 30px;
-                    justify-content: center;
-                }}
-                .nav-button {{
-                    padding: 12px 24px;
-                    border-radius: 6px;
-                    font-weight: 600;
-                    text-decoration: none;
-                    text-align: center;
-                    transition: all 0.3s ease;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                    flex: 1;
-                    min-width: 180px;
-                    max-width: 250px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: #3a506b;
-                    color: white;
-                }}
-                .nav-button:hover {{
-                    transform: translateY(-3px);
-                    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
-                    background-color: #1c2541;
-                }}
-                .nav-button.primary {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #4361ee;
-                }}
-                .nav-button.success {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #38b000;
-                }}
-                .nav-button.warning {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #ff9e00;
-                }}
-                .nav-button.danger {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #ef476f;
-                }}
-                .nav-button.info {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #4cc9f0;
-                }}
-                .content-container {{
-                    text-align: center;
-                    max-width: 1000px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }}
-                .image-container {{
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                    padding: 10px;
-                    background: white;
-                    border-radius: 8px;
-                }}
-                .analysis-container {{
-                    margin-top: 20px;
-                    text-align: left;
-                    background: white;
-                    padding: 15px;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                    font-size: 16px;
-                }}
-                .analysis-container h3 {{
-                    color: #3a506b;
-                    border-bottom: 1px solid #e9ecef;
-                    padding-bottom: 10px;
-                    font-size: 20px;
-                }}
-                .analysis-container p, .analysis-container li {{
-                    margin-top: 10px;
-                    line-height: 1.7;
-                    font-size: 16px;
-                }}
-                .analysis-container strong {{
-                    font-size: 17px;
-                    font-weight: 600;
-                }}
-                .button-container {{
-                    margin-top: 20px;
-                    text-align: center;
-                }}
-                .action-button {{
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: #3a506b;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 4px;
-                    margin-right: 10px;
-                }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="header-container">
-                    <h1>Activity Dashboard</h1>
-                </div>
-                
-                <!-- Navigation Buttons -->
-                <div class="nav-buttons">
-                    <a href="{url_for('logs.index')}" class="nav-button primary">Home</a>
-                    <a href="{url_for('logs.plot')}" class="nav-button success">User Activity Plot</a>
-                    <a href="{url_for('logs.dashboard')}" class="nav-button info">Dashboard</a>
-                    <a href="{url_for('logs.security_dashboard')}" class="nav-button danger">Security Dashboard</a>
-                    <a href="{url_for('logs.detect_anomalies')}" class="nav-button warning">Anomaly Detection</a>
-                </div>
-                
-                <div class="content-container">
-                    <div class="image-container">
-                        <img src="data:image/png;base64,{img_b64}" alt="Activity Dashboard" style="max-width:100%; height:auto;">
-                    </div>
-                    <div class="analysis-container">
-                        <h3>Dashboard Analysis</h3>
-                        <p style="margin-top: 10px; line-height: 1.6;">
-                            This dashboard provides a comprehensive overview of system activity through three complementary visualizations:
-                        </p>
-                        <ul style="margin-top: 10px; line-height: 1.6; list-style-type: none; padding-left: 0;">
-                            <li style="margin-bottom: 8px;"><strong>User Activity (Top Left):</strong> Shows the distribution of actions by user, helping identify the most active users.</li>
-                            <li style="margin-bottom: 8px;"><strong>Action Distribution (Top Right):</strong> Displays the percentage breakdown of different action types across the system.</li>
-                            <li style="margin-bottom: 8px;"><strong>Activity Timeline (Bottom):</strong> Tracks the volume of actions over time, revealing usage patterns and potential anomalies.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </body>
-        </html>
-        '''
+        return render_template('dashboard.html', img_b64=img_b64)
     return "Error loading logs"
 
 @logs.route("/security-dashboard")
@@ -728,202 +389,6 @@ def security_dashboard():
         img_b64 = base64.b64encode(img.getvalue()).decode()
         plt.close()
 
-        # Return HTML with page header, navbar, centered image and security evaluation
-        return f'''
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Security Dashboard</title>
-            <style>
-                * {{
-                    margin: 0;
-                    padding: 0;
-                    box-sizing: border-box;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }}
-                body {{
-                    background-color: #f8f9fa;
-                    color: #343a40;
-                    line-height: 1.6;
-                }}
-                .container {{
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }}
-                h1 {{
-                    text-align: center;
-                    color: #212529;
-                    margin-bottom: 30px;
-                    font-size: 2.5em;
-                    font-weight: 700;
-                    padding: 15px 0;
-                    position: relative;
-                    letter-spacing: 1px;
-                    display: inline-block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }}
-                h1::after {{
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 3px;
-                    background: linear-gradient(to right, #3a506b, #ef476f);
-                    border-radius: 2px;
-                }}
-                .header-container {{
-                    text-align: center;
-                    width: 100%;
-                }}
-                .nav-buttons {{
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 15px;
-                    margin-bottom: 30px;
-                    justify-content: center;
-                }}
-                .nav-button {{
-                    padding: 12px 24px;
-                    border-radius: 6px;
-                    font-weight: 600;
-                    text-decoration: none;
-                    text-align: center;
-                    transition: all 0.3s ease;
-                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-                    flex: 1;
-                    min-width: 180px;
-                    max-width: 250px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background-color: #3a506b;
-                    color: white;
-                }}
-                .nav-button:hover {{
-                    transform: translateY(-3px);
-                    box-shadow: 0 6px 8px rgba(0,0,0,0.2);
-                    background-color: #1c2541;
-                }}
-                .nav-button.primary {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #4361ee;
-                }}
-                .nav-button.success {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #38b000;
-                }}
-                .nav-button.warning {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #ff9e00;
-                }}
-                .nav-button.danger {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #ef476f;
-                }}
-                .nav-button.info {{
-                    background-color: #3a506b;
-                    border-bottom: 3px solid #4cc9f0;
-                }}
-                .content-container {{
-                    text-align: center;
-                    max-width: 1000px;
-                    margin: 0 auto;
-                    padding: 20px;
-                }}
-                .image-container {{
-                    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                    padding: 10px;
-                    background: white;
-                    border-radius: 8px;
-                }}
-                .analysis-container {{
-                    margin-top: 20px;
-                    text-align: left;
-                    background: white;
-                    padding: 15px;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                    font-size: 16px;
-                }}
-                .analysis-container h3 {{
-                    color: #3a506b;
-                    border-bottom: 1px solid #e9ecef;
-                    padding-bottom: 10px;
-                    font-size: 20px;
-                }}
-                .analysis-container p, .analysis-container li {{
-                    margin-top: 10px;
-                    line-height: 1.7;
-                    font-size: 16px;
-                }}
-                .analysis-container strong {{
-                    font-size: 17px;
-                    font-weight: 600;
-                }}
-                .button-container {{
-                    margin-top: 20px;
-                    text-align: center;
-                }}
-                .action-button {{
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: #3a506b;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 4px;
-                    margin-right: 10px;
-                }}
-                .danger-button {{
-                    background-color: #ef476f;
-                }}
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <div class="header-container">
-                    <h1>Security Dashboard</h1>
-                </div>
-                
-                <!-- Navigation Buttons -->
-                <div class="nav-buttons">
-                    <a href="{url_for('logs.index')}" class="nav-button primary">Home</a>
-                    <a href="{url_for('logs.plot')}" class="nav-button success">User Activity Plot</a>
-                    <a href="{url_for('logs.dashboard')}" class="nav-button info">Dashboard</a>
-                    <a href="{url_for('logs.security_dashboard')}" class="nav-button danger">Security Dashboard</a>
-                    <a href="{url_for('logs.detect_anomalies')}" class="nav-button warning">Anomaly Detection</a>
-                </div>
-                
-                <div class="content-container">
-                    <div class="image-container">
-                        <img src="data:image/png;base64,{img_b64}" alt="Security Dashboard" style="max-width:100%; height:auto;">
-                    </div>
-                    <div class="analysis-container">
-                        <h3>Security Analysis</h3>
-                        <p style="margin-top: 10px; line-height: 1.6;">
-                            This security dashboard focuses on failed login attempts, which can indicate potential security threats:
-                        </p>
-                        <ul style="margin-top: 10px; line-height: 1.6; list-style-type: none; padding-left: 0;">
-                            <li style="margin-bottom: 8px;"><strong>User-Based Failures (Top Left):</strong> Identifies users with the most failed login attempts, potentially indicating targeted accounts.</li>
-                            <li style="margin-bottom: 8px;"><strong>Temporal Patterns (Top Right):</strong> Shows when failed logins occur, helping identify coordinated attack attempts.</li>
-                            <li style="margin-bottom: 8px;"><strong>Source IP Analysis (Bottom):</strong> Reveals the IP addresses with the most failed attempts, helping identify potential attackers.</li>
-                        </ul>
-                        <p style="margin-top: 15px; line-height: 1.6;">
-                            <strong>Recommended Actions:</strong> Investigate users and IPs with unusually high failed login counts. Consider implementing additional security measures for frequently targeted accounts.
-                        </p>
-                    </div>
-                    <div class="button-container">
-                        <a href="{url_for('logs.index')}" class="action-button">Back to Dashboard</a>
-                        <a href="{url_for('logs.detect_anomalies')}" class="action-button danger-button">View Anomalies</a>
-                    </div>
-                </div>
-            </div>
-        </body>
-        </html>
-        '''
+        return render_template('security-dashboard.html', img_b64=img_b64)
     return "Error loading logs"
 
