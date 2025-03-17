@@ -11,7 +11,6 @@ A Flask-based web application for analyzing and visualizing log data patterns, d
 - **Anomaly Detection**: Identify unusual patterns in log data
 - **Advanced Search**: Filter logs by various parameters including timestamp, user, IP address, and action
 - **Data Visualization**: Charts and graphs to represent log activity patterns
-- **Responsive Design**: Works on desktop and mobile devices
 
 ##  Demo
 
@@ -26,6 +25,9 @@ This project is available as a live demo at [demo-link.com](https://demo-link.co
 - **Frontend**: HTML, CSS, JavaScript
 - **Data Processing**: Pandas, NumPy
 - **Visualization**: Matplotlib
+
+## Video demo 
+- *![Recording2025-03-17134042-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/d9d57fa8-0e50-42cc-af0a-391ca1e680e3)
 
 ##  Screenshots
 
